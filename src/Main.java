@@ -22,12 +22,12 @@ public class Main {
         }
         //задача 3
         System.out.println("Задача 3");
-        int Y = 12_000_000;
+        int y = 12_000_000;
         int born = 17;
         int died = 8;
         for (int year = 1; year <= 10; year++) {
-            Y += Y * (born - died) / 1000;
-            System.out.println("Год " + year + " численность населения состовляет " + Y + " человек");
+            y += y * (born - died) / 1000;
+            System.out.println("Год " + year + " численность населения состовляет " + y + " человек");
         }
         //задача 4
         System.out.println("задача 4");
@@ -36,46 +36,46 @@ public class Main {
         double bankPercent = 0.07;
         int all = 12_000_000;
         while (money < all) {
-            b = b + 1;
+            b++;
             money = money + money * bankPercent;
             System.out.println("Сумма " + money + " , количество месяцев " + b);
         }
         //задача 5
         System.out.println("Задача 5");
-        double money1 = 15000;
-        double bankPercent1 = 0.07;
-        int all1 = 12_000_000;
-        int period1 = 6;
-        for (int i1 = 0; money1 < all1; i1++) {
-            money1 = money1 + money1 * bankPercent1;
-            if (i1 % period1 == 0) {
-                System.out.println("Сумма " + money1 + " , количество месяцев " + i1);
+        double moneyTwo = 15000;
+        double bankPercentTwo = 0.07;
+        int allTwo = 12_000_000;
+        int periodTwo = 6;
+        for (int k = 0; moneyTwo < allTwo; k++) {
+            moneyTwo = moneyTwo + moneyTwo * bankPercentTwo;
+            if (k % periodTwo == 0) {
+                System.out.println("Сумма " + moneyTwo + " , количество месяцев " + i);
             }
         }
         //задача 6
         System.out.println("Задача 6");
-        double money2 = 15000;
+        double moneyThree = 15000;
         int period = 6;
         int years = 9;
         int allMonth = years * 12;
         double bankPercent2 = 0.07;
-        for (int i2 = 0; i2 <= allMonth; i2++) {
+        for (int j = 0; j <= allMonth; j++) {
             money = money + money * bankPercent;
-            if (i2 % period == 0) {
-                System.out.println("Сумма " + money + " , количество месяцев " + i2);
+            if (j % period == 0) {
+                System.out.println("Сумма " + money + " , количество месяцев " + j);
             }
         }
         //задача 7
         System.out.println("Задача 7");
-        for (int fr = 1; fr < 31; fr += 7) {
-            System.out.println("Сегодня пятница " + fr + " необходимо подготовить отчет");
+        for (int a = 1; a < 31; a += 7) {
+            System.out.println("Сегодня пятница " + a + " необходимо подготовить отчет");
         }
         //задача 8
         System.out.println("Задача 8");
         int currentYear = 2023;
-        for (int i3 = 0; i3 < currentYear + 100; i3 += 79) {
-            if (i3 > currentYear - 200) {
-                System.out.println(i3);
+        for (int c = 0; c < currentYear + 100; c += 79) {
+            if (c > currentYear - 200) {
+                System.out.println(c);
             }
         }
     }
